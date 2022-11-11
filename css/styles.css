@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+@media only screen and (min-width: 1280px){
+    .homebody{
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+
+    .homesection{
+      margin-bottom: 100px;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+    
+    .hamburgernav label{
+      display: none;
+    }    
+    
+    .homevideo{
+      width: 800px; 
+      height: 450px; 
+      float: left;
+    }
+
+    .homeaside{
+      position: absolute;
+      top: 47rem;
+      right: 10rem;
+    }
+
+    .homeaside li{
+      margin-top: 30px;
+    }
+
+    .homesection{
+      float:left;
+      width:40%;
+    }
+
+        .homesection article{
+            margin-bottom: 90px;
+        }
+        
+        .homefigure1, .homefigure2, .homefigure3{
+        float: right;
+        }
+
+        .homesection img{
+        width: 400px;
+        height: 250px;
+        }
+
+        .productarticles {  display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 10px 10px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "productarticle2 . ."
+              ". . ."
+              ". . productarticle3"
+              ". productarticle1 ."
+              "productarticle5 . ."
+              ". . productarticle4"
+              ". productarticle6 .";
+          }
+          
+          .productarticle2 { grid-area: productarticle2; }
+          
+          .productarticle1 { grid-area: productarticle1; }
+          
+          .productarticle3 { grid-area: productarticle3; }
+          
+          .productarticle5 { grid-area: productarticle5; }
+          
+          .productarticle4 { grid-area: productarticle4; }
+          
+          .productarticle6 { grid-area: productarticle6; }
+
+        
+          .productaside {  
+            margin-bottom: 100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 10px 10px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "productfigure1 productfigure2 productfigure3";
+          }
+          
+          .productfigure1 {
+            grid-area: productfigure1;
+            width: 300px;
+            
+          }
+          
+          .productfigure2 {
+            grid-area: productfigure2;
+            width: 300px;
+            
+          }
+          
+          .productfigure3 {
+            grid-area: productfigure3;
+            width: 300px;
+            
+          }
+          
+          .productaside img{
+            width: 300px;
+            height: 175px;
+            
+          }
+
+          .pricingbody{
+            margin-bottom: 100px;
+          }
+          .pricingtable{
+            width: 75%;
+            float: left;
+          }
+
+          .pricingaside {  
+            float: right;
+            width: 25%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-auto-columns: 1fr;
+            gap: 10px 10px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "pricingfigure1"
+              "pricingfigure2"
+              "pricingfigure3";
+          }
+          
+          .pricingfigure1 { grid-area: pricingfigure1; }
+          
+          .pricingfigure2 { grid-area: pricingfigure2; }
+          
+          .pricingfigure3 { grid-area: pricingfigure3; }
+          
+          .pricingaside img{
+            width: 300px;
+            height: 175px;
+          }
+
+          .formsection{
+            width: 40%;
+            float: left;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+          }
+          
+          .formsection input[type=text], input[type=email]{
+            display: inline-block;
+            box-sizing: border-box;
+            width: 100%;
+            height: 30px;
+            margin-bottom: 50px;
+          }
+
+          .formsection #message{
+            height: 200px;
+            text-align: left;
+          }
+
+          .contactaside {  
+            float: right;
+            width: 25%;
+            margin-bottom: 100px;
+          }
+          
+          .contactaside img{
+            width: 100%;
+            height: 100%;
+          } 
+}
+
+@media only screen and (max-width: 1279px){
+
+    .homebody{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homebody header{
+        order: 1;
+    }
+
+    .hamburgernav{
+        order:2
+    }
+
+    .hamburgernav label{
+        display: none;
+    }
+
+    .homevideo{
+        width: 600px;
+        height: 375px;
+        order: 4;
+    }
+    .homeaside{
+        width:23%;
+        float:left;
+        order: 3;
+    }
+
+    .homeaside li{
+        margin-top: 30px;
+    }
+
+    .homesection{
+        float:left;
+        width:60%;
+        display: flex;
+        flex-direction: column;
+        order: 5;
+    }
+
+    .homearticle3{
+        order: 1;
+    }
+
+    .homearticle2{
+        order: 2;
+    }
+
+    .homearticle1{
+        order: 3;
+    }
+
+    .sitefooter{
+        order: 6;
+    }
+
+    .homesection article{
+        margin-bottom: 90px;
+    }
+    
+    .homefigure1, .homefigure2, .homefigure3{
+    float: left;
+    width: 180px;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+    }
+
+    .homesection img{
+    width: 180px;
+    }
+
+
+    .productarticles {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "productarticle1 ."
+          ". ."
+          ". productarticle2"
+          "productarticle3 ."
+          ". productarticle5"
+          ". ."
+          "productarticle6 ."
+          ". .";
+      }
+      
+      .productarticle1 { grid-area: productarticle1; }
+      
+      .productarticle2 { grid-area: productarticle2; }
+      
+      .productarticle3 { grid-area: productarticle3; }
+      
+      .productarticle5 { grid-area: productarticle5; }
+      
+      .productarticle6 { grid-area: productarticle6; }
+
+      .productarticle4, .productfigure3{
+        display: none;
+      }
+
+      .productaside {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "productfigure1 productfigure2";
+        width: 100%;
+        height: 300px;
+        margin-bottom: 150px;
+      }
+      
+      .productfigure1 { grid-area: productfigure1; }
+      
+      .productfigure2 { grid-area: productfigure2; }
+
+      .productaside figure img {
+        min-width: 150px;
+        max-width: 100%;
+      }
+
+      .pricingaside {  
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "pricingfigure2 pricingfigure3";
+        width: 100%;
+        height: 400px;
+      }
+      
+      .pricingfigure2 { grid-area: pricingfigure2; }
+      
+      .pricingfigure3 { grid-area: pricingfigure3; }      
+
+      .pricingaside figure img {
+        min-width: 150px;
+        max-width: 100%;
+      }
+
+      .pricingfigure1{
+        display: none;
+      }
+
+      .formsection{
+        width: 70%;
+        float: left;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+      }
+      
+      .formsection input[type=text], input[type=email]{
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 30px;
+        margin-bottom: 50px;
+      }
+
+      .formsection #message{
+        height: 200px;
+        text-align: left;
+      }
+
+      .contactaside {  
+        float: right;
+        width: 30%;
+        margin-bottom: 100px;
+      }
+      
+      .contactaside img{
+        width: 100%;
+        height: 100%;
+      } 
+}
+
+@media only screen and (max-width: 480px){
+
+    .homebody{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .homebody header{
+        order: 1;
+
+    }
+    .hamburgernav{
+        order: 2;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+    .hamburgeritems{
+        position: absolute;
+        top: 3rem;
+        right: 0rem;
+        background-color: #FFF;
+    }
+    /* (A) BREAK INTO VERTICAL MENU */
+  .hamburgeritems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 2px solid #333;
+    }
+ 
+  /* (B) SHOW HAMBURGER ICON */
+  .hamburgernav label { 
+    display: inline-block; 
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 2em;
+    padding: 10px;
+    }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  .hamburgeritems { display: none; }
+  .hamburgernav input:checked ~ .hamburgeritems { display: block; }
+
+    .homevideo{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .homeaside{
+        width:45%;
+        float:left;
+        order: 3;
+    }
+
+    .homeaside li{
+        margin-top: 10px;
+    }
+
+    .homesection{
+        float:left;
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        order: 5;
+    }
+
+    .homearticle3{
+        order: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homearticle2{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homearticle1{
+        order: 3;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homearticle1 header{
+        order: 1;
+    }
+
+    .homearticle1 p{
+        order: 2;
+    }
+
+    .homearticle1 figure{
+        order: 3;
+    }
+
+    .homearticle1 footer{
+        order: 4;
+    }
+
+    .homearticle2 header{
+        order: 1;
+    }
+
+    .homearticle2 p{
+        order: 2;
+    }
+
+    .homearticle2 figure{
+        order: 3;
+    }
+
+    .homearticle2 footer{
+        order: 4;
+    }
+
+    .homearticle3 header{
+        order: 1;
+    }
+
+    .homearticle3 p{
+        order: 2;
+    }
+
+    .homearticle3 figure{
+        order: 3;
+    }
+
+    .homearticle3 footer{
+        order: 4;
+    }
+
+    .sitefooter{
+        order: 6;
+    }
+
+    .homesection article{
+        margin-bottom: 90px;
+    }
+    
+    .homefigure1, .homefigure2, .homefigure3{
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    .homesection img{
+    width: 180px;
+    }
+
+    .productbody{
+      margin-bottom: 100px;
+    }
+    .productarticles {  display: grid;
+        grid-template-columns: 1.5fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-auto-columns: 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". ."
+          "productarticle5 ."
+          ". ."
+          ". ."
+          "productarticle3 ."
+          ". ."
+          ". ."
+          "productarticle2 ."
+          ". ."
+          ". ."
+          "productarticle1 ."
+          ". .";
+      }
+      
+      .productarticle5 { grid-area: productarticle5; }
+      
+      .productarticle3 { grid-area: productarticle3; }
+      
+      .productarticle2 { grid-area: productarticle2; }
+      
+      .productarticle1 { grid-area: productarticle1; }
+
+      .productarticle4, .productarticle6{
+        display: none;
+      }
+      
+      .productaside{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
+      .productfigure3{
+        display: block;
+      }
+      .productaside figure img{
+        width: 100%;
+      }
+      .pricingbody{
+        margin-bottom: 100px;
+      }
+
+      .pricingbody .logo{
+        display: none;
+      }
+
+      .pricingbody .aboutinovation{
+        display: none;
+      }
+
+      .pricingaside{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
+      .pricingfigure1{
+        display: block;
+      }
+
+      .pricingaside figure img{
+        width: 100%;
+      }
+
+      .contactbody{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+      }
+
+      .contactaside{
+        width: 70%;
+        margin-top: 50px;
+      }
+
+}
+
+#hamburger{
+display: none;
+}
+
+.homebody{
+  font-family:  Arial, Helvetica, sans-serif;
+}
+
+.homesection footer a:hover{
+    color: #008000;
+}
+
+.homesection footer a:active{
+  color: #FA77FA;
+}
+
+.contactbody h3 {
+  font-family: 'Notable', sans-serif;
+}
+
+.homebody h1{
+  color: #ff0000;
+}
+
+.homebody h2{
+  color: #800080;
+}
+
+.homesection h3{
+  color: #008000;
+}
+.homeaside h2{
+  color: #00688B	;
+}
+
+.homebody footer p{
+  color: #ffa500;
+}
+
+.productarticles h2{
+  color: #FA77FA;
+}
+
+.pricingtable table{
+  background-color: black;
+}
+
+.pricingtable table, th, td{
+    border: solid #333;
+    border-color: #00688B;
+    border-collapse: collapse;
+    border-style: double;
+    border-width: 3px;
+}
+
+.pricingtable table td:first-child{
+  color: #ff0;
+}
+
+.pricingtable table tr:nth-child(even){
+  color: #cff;
+}
+
+.pricingtable table tr:nth-child(odd){
+  color: #fff;
+}
+
+a + p{
+  background-color: #ff0;
+}
+
+article > h3{
+  background-color: yellow;
+}
+
+.pricingbody h3{
+  font-family: 'Notable', sans-serif;
+  color: #42AEB2;
+  letter-spacing: 1rem;
+  line-height: 2rem;
+  text-indent: 50px;
+  text-transform: uppercase;
+}
+
+.pricingbody h3::first-letter{
+  color: #ff0000;
+}
+
+.pricingbody p{
+  word-spacing: 1em;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+.cookie{
+color: #FFF;
+text-align: center;
+box-sizing: border-box;
+width: 350px;
+background-color: #FA0;
+opacity: 0.5;
+position: fixed;
+bottom: 0;
+right: 0;
+padding: 2rem;
+z-index: 9999;
+}
+
+.sitefooter{
+    clear:both
+}
+
+h5{
+  display: none;
+}
